@@ -2,9 +2,8 @@
 #define __PROFILER_H
 
 //-- Includes ------------------------------------------------------------------
-#include "stm32f4xx.h"
-#include <stdint.h>
-#include <stdio.h>
+#include "SharedLogging.h"
+#include "BoardSpecifics.h"
 
 //-- Exported macro ------------------------------------------------------------
 #define PROFILER_EVENTS_MAX 16
