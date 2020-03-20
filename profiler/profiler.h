@@ -2,7 +2,7 @@
 #define __PROFILER_H
 
 //-- Includes ------------------------------------------------------------------
-#include "SharedLogging.h"
+#include "Io/Io_SharedLogging.h"
 #include "BoardSpecifics.h"
 
 //-- Exported macro ------------------------------------------------------------
