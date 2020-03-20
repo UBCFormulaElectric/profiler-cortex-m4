@@ -70,7 +70,7 @@ void profiler_stop(void)
 
     ticks_per_1us = SystemCoreClock / 1000000;
 
-    SharedLogging_Printf("Profiling \"%s\" sequence:\n"
+    Io_SharedLogging_Printf("Profiling \"%s\" sequence:\n"
            "--Event-----------------------|-timestamp_us-|----delta_us---|-timestamp_ticks-|----delta_ticks---|" PROFILER_ENDL,
            profiler.name);
     prev_time_us = 0;
@@ -83,10 +83,10 @@ void profiler_stop(void)
         delta_ticks = timestamp_ticks - prev_time_ticks;
         prev_time_us = timestamp_us;
         prev_time_ticks = timestamp_ticks;
-        SharedLogging_Printf("%-30s: %9d us | +%9d us | %9d ticks | +%9d ticks |" PROFILER_ENDL,
+        Io_SharedLogging_Printf("%-30s: %9d us | +%9d us | %9d ticks | +%9d ticks |" PROFILER_ENDL,
                profiler.event_name[i], (int)timestamp_us, (int)delta_us, (int)timestamp_ticks, (int)delta_ticks);
     }
-    SharedLogging_Printf(PROFILER_ENDL);
+    Io_SharedLogging_Printf(PROFILER_ENDL);
     profiler.event_count = 0;
     dwt_deinit();
 }
