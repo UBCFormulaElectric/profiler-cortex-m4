@@ -3,7 +3,7 @@
 
 //-- Includes ------------------------------------------------------------------
 #include "Io/Io_SharedLogging.h"
-#include "BoardSpecifics.h"
+#include "Io/Io_BoardSpecifics.h"
 
 //-- Exported macro ------------------------------------------------------------
 #define PROFILER_EVENTS_MAX 16
