@@ -2,8 +2,8 @@
 #define __PROFILER_H
 
 //-- Includes ------------------------------------------------------------------
-#include "Io/Io_SharedLogging.h"
-#include "Io/Io_BoardSpecifics.h"
+#include "Io_SharedLogging.h"
+#include "Io_BoardSpecifics.h"
 
 //-- Exported macro ------------------------------------------------------------
 #define PROFILER_EVENTS_MAX 16
