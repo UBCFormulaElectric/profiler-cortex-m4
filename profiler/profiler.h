@@ -2,7 +2,6 @@
 #define __PROFILER_H
 
 //-- Includes ------------------------------------------------------------------
-#include "Io_SharedLogging.h"
 #include <stm32f3xx.h>
 
 //-- Exported macro ------------------------------------------------------------
