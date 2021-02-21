@@ -1,5 +1,6 @@
 //-- Includes ------------------------------------------------------------------
 #include "profiler.h"
+#include <stdio.h>
 
 //-- Private functions prototypes ----------------------------------------------
 static __INLINE void dwt_init(void);

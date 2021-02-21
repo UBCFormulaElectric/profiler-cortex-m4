@@ -2,7 +2,7 @@
 #define __PROFILER_H
 
 //-- Includes ------------------------------------------------------------------
-#include <stm32f3xx.h>
+#include "Io_SharedStm32Drivers.h"
 
 //-- Exported macro ------------------------------------------------------------
 #define PROFILER_EVENTS_MAX 16
